@@ -1,0 +1,33 @@
+<div>
+  <div>
+    <h1>Teorema de Pitagoras</h1>
+    <img src="https://s5.static.brasilescola.uol.com.br/img/2019/10/trinagulo-retangulo.jpg" class="img-fluid" alt="">
+    <p>Para calcular podemos usar a seguinte fórmula:</p>
+    <img src="https://s1.static.brasilescola.uol.com.br/img/2019/10/formula-teorema-pitagoras.jpg" class="img-fluid" alt="">
+  </div>
+  <p>Sabendo dessas coisas por favor preencher os campos abaixo com os valores ja possuidos:</p>
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Hipotenusa "a"</span>
+    <input disabled="disabled" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  </div>
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Cateto "b"</span>
+    <input type="number" [(ngModel)] = "cateto1" class="form-control" aria-label="Sizing example input"
+     aria-describedby="inputGroup-sizing-sm"
+     >
+  </div>
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Cateto "c"</span>
+    <input type="number" [(ngModel)] = "cateto2" class="form-control" aria-label="Sizing example input"
+     aria-describedby="inputGroup-sizing-sm"
+     >
+  </div>
+
+  <button type="button" class="btn btn-success" (click)="calcular()">
+    Calcular
+  </button>
+
+  <h3 class="text-center"> Resultado: <b>{{ hipotenusa }}</b></h3>
+
+</div>
+
